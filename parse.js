@@ -10,8 +10,14 @@ function parseItem(raw, index) {
 
   const item = { index, id, ver, data };
   if (data) {
-    if (Array.isArray(data.tileset)) item.tileset = data.tileset;
-    if (Array.isArray(data.affixes)) item.affixes = data.affixes;
+    if (Array.isArray(data.tileset)) {
+      item.tileset = data.tileset;
+      delete data.tileset;
+    }
+    if (Array.isArray(data.affixes)) {
+      item.affixes = data.affixes;
+      delete data.affixes;
+    }
   }
   return item;
 }
