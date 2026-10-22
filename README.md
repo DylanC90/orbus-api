@@ -97,6 +97,7 @@ Top players by average level across the 5 counted classes. Default **10**, max *
 ## 1. Upload the folder
  
 Find this Folder, aka where the server files are Located:
+ENSURE IT IS NAME "orbus-api"
  
 ```
 /classic-server/
