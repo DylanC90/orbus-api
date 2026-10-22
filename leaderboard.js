@@ -44,12 +44,14 @@ async function getTopClass(limit = 10) {
   );
   const rows = await collect(cursor);
 
-  const scored = rows.map(x => {
-    const filtered = classLevelsFiltered(x.classLevels);
-    const vals = Object.values(filtered);
-    const avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : 0;
-    return { name: x.name, avgClassLevel: +avg.toFixed(2), classLevels: filtered };
-  });
+  const scored = rows
+    .map(x => {
+      const filtered = classLevelsFiltered(x.classLevels);
+      const vals = Object.values(filtered);
+      const avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : 0;
+      return { name: x.name, avgClassLevel: +avg.toFixed(2), classLevels: filtered };
+    })
+    .filter(x => x.avgClassLevel > 0);   // ← ignore 0's
 
   scored.sort((a, b) => b.avgClassLevel - a.avgClassLevel);
   return scored.slice(0, limit);

@@ -32,9 +32,13 @@ async function run(query) {
   return query.run(c);
 }
 
-async function collect(cursor) {
+async function collect(result) {
+  if (Array.isArray(result)) return result;
+  if (result && typeof result.toArray === "function") {
+    return await result.toArray();
+  }
   const out = [];
-  for await (const row of cursor) out.push(row);
+  for await (const row of result) out.push(row);
   return out;
 }
 

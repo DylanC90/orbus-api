@@ -1,10 +1,19 @@
 const express = require("express");
+const rateLimit = require("express-rate-limit");
 const { getConn } = require("./db");
 const { getStats } = require("./player");
-const { getTopKills, getTopPlaytime } = require("./leaderboard");
+const { getTopKills, getTopPlaytime, getTopClass } = require("./leaderboard");
 
 const app = express();
 app.use(express.json());
+
+app.use(rateLimit({
+  windowMs: 60_000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "rate limit exceeded" },
+}));
 
 function parseLimit(q, def = 10, max = 100) {
   const n = Number(q);
@@ -20,7 +29,8 @@ function handle(fn) {
       if (e && e.name === "ReqlNonExistenceError") {
         return res.status(404).json({ error: "not found" });
       }
-      res.status(500).json({ error: e.message || "internal error" });
+      console.error("[500]", req.method, req.path, e && e.message);
+      res.status(500).json({ error: "internal error" });
     }
   };
 }
@@ -50,7 +60,6 @@ app.get("/topplaytime", handle(async (req, res) => {
 
 app.get("/topclass", handle(async (req, res) => {
   const limit = parseLimit(req.query.limit);
-  const { getTopClass } = require("./leaderboard");
   const data = await getTopClass(limit);
   res.json(data);
 }));
