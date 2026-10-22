@@ -28,18 +28,18 @@ Full stats and equipped gear for one character. **Case-sensitive.** Returns **40
 {
   "name": "test",
   "mobKills": 5,
-  "playtimeSeconds": 1422,
-  "playtimeHours": 0.4,
+  "playtimeSeconds": 1744,
+  "playtimeHours": 0.48,
   "classLevels": { "archer": 20, "fisher": 1, "orbhealer": 1, "runemage": 1, "swordboard": 1 },
-  "lastPlayed": 1792161301,
-  "lastPlayedISO": "2026-10-16T05:15:01.000Z",
+  "lastPlayed": 1792600943,
+  "lastPlayedISO": "2026-10-21T16:42:23.000Z",
   "equipped": {
-    "weapon": { "slot": "Weapon", "index": 4, "id": "229", "ver": "1", "data": { "attack": 1380, "intellect": 100, "strength": 98, "affixes": ["bleed"], "tileset": [252,256,255,253,254], "rarity": "epic" }, "tileset": [252,256,255,253,254], "affixes": ["bleed"] },
+    "weapon": { "slot": "Weapon", "index": 4, "id": "229", "ver": "1", "data": { "itemLevel": 21.4, "attack": 1380, "intellect": 100, "strength": 98, "maxDurability": 234, "rarity": "epic" }, "tileset": [252,256,255,253,254], "affixes": ["bleed"] },
     "armor": [
-      { "slot": "Helmet",     "index": 0, "id": "538", "data": { "armor": 331, "vitality": 87, "tileset": [253,255,254] }, "tileset": [253,255,254] },
+      { "slot": "Helmet",     "index": 0, "id": "538", "data": { "armor": 331, "vitality": 87, "defense": 90, "rarity": "epic" }, "tileset": [253,255,254] },
       { "slot": "Shoulders",  "index": 1, "id": "541", "data": { "...": "..." } },
-      { "slot": "Chestplate", "index": 5, "id": "540", "data": { "...": "..." } },
-      { "slot": "Gloves",     "index": 6, "id": "539", "data": { "...": "..." } }
+      { "slot": "Chestplate", "index": 5, "id": "540", "data": { "...": "..." }, "tileset": [253,254,256,252] },
+      { "slot": "Gloves",     "index": 6, "id": "539", "data": { "...": "..." }, "tileset": [256,255,252] }
     ],
     "rings": [
       { "slot": "Ring 1", "index": 3, "id": "493", "data": null },
