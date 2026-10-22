@@ -18,7 +18,7 @@ Liveness check. Returns **500** if RethinkDB is down.
 
 ### `GET /player/:name`
 
-Full stats and equipped gear for one character. **Case-sensitive.** Returns **404** if not found. Class levels exclude unarmed/barbarian.
+Full stats and equipped gear for one character. **Case-sensitive.** Returns **404** if not found.
 
 ```
 /player/test
