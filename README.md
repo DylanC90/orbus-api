@@ -1,17 +1,30 @@
-Orbus API — Endpoints
-Base: http://localhost:3001
+# Orbus API
 
-GET /health
-text
+## Endpoints
+
+### `GET /health`
+
+Liveness check. Returns **500** if RethinkDB is down.
+
+```
 /health
-json
-{ "ok": true, "now": "2026-10-21T15:11:25.434Z" }
-Liveness check. 500 if RethinkDB is down.
+```
 
-GET /player/:name
-text
+```json
+{ "ok": true, "now": "2026-10-21T15:11:25.434Z" }
+```
+
+---
+
+### `GET /player/:name`
+
+Full stats and equipped gear for one character. **Case-sensitive.** Returns **404** if not found. Class levels exclude unarmed/barbarian.
+
+```
 /player/test
-json
+```
+
+```json
 {
   "name": "test",
   "mobKills": 5,
@@ -34,25 +47,110 @@ json
     ]
   }
 }
-Full stats + equipped gear for one character. Case-sensitive. 404 if not found. Class levels exclude unarmed/barbarian.
+```
 
-GET /topkills?limit=N
-text
+---
+
+### `GET /topkills?limit=N`
+
+Top players by mob kills. Default **10**, max **100**. Zero-kill players are excluded.
+
+```
 /topkills?limit=10
-json
+```
+
+```json
 [{ "name": "test", "mobKills": 5 }]
-Top players by mob kills. Default 10, max 100. Zero-kill excluded.
+```
 
-GET /topplaytime?limit=N
-text
+---
+
+### `GET /topplaytime?limit=N`
+
+Top players by playtime. Default **10**, max **100**. Zero-playtime players are excluded.
+
+```
 /topplaytime?limit=10
-json
-[{ "name": "test", "playtimeHours": 0.4 }]
-Top players by playtime. Default 10, max 100. Zero-playtime excluded.
+```
 
-GET /topclass?limit=N
-text
+```json
+[{ "name": "test", "playtimeHours": 0.4 }]
+```
+
+---
+
+### `GET /topclass?limit=N`
+
+Top players by average level across the 5 counted classes. Default **10**, max **100**.
+
+```
 /topclass?limit=10
-json
+```
+
+```json
 [{ "name": "test", "avgClassLevel": 4.8, "classLevels": { "archer": 20, "fisher": 1, "orbhealer": 1, "runemage": 1, "swordboard": 1 } }]
-Top players by average level across the 5 counted classes. Default 10, max 100.
+```
+
+
+# INSTALLATION GUIDE
+ 
+## 1. Upload the folder
+ 
+Find this Folder, aka where the server files are Located:
+ 
+```
+/classic-server/
+```
+ 
+It must end up as `~/classic-server/orbus-api/`, next to `docker-compose.yml`.
+ 
+## 2. Add the service
+ 
+Edit `~/classic-server/docker-compose.yml` and add this under `services:` (**2-space indent**), after the `api:` block:
+If any of the RETHNK data has been altered change it here to correspond with server setup.
+
+```yaml
+  orbus-api:
+    build:
+      context: ./orbus-api
+    restart: unless-stopped
+    environment:
+      RETHINK_HOST: rethinkdb
+      RETHINK_PORT: 28015
+      RETHINK_DB: orbus
+      PORT: 3001
+    depends_on:
+      setup:
+        condition: service_completed_successfully
+    ports:
+      - "3001:3001"
+```
+ 
+## 3. Open the port
+ 
+Make sure port 3001 is open, as its the default api port
+ 
+## 4. Start it
+
+```bash
+docker compose up -d --build orbus-api
+```
+
+Then check the log for errors or success message
+```
+docker compose logs -f orbus-api
+```
+
+Expected output:
+ 
+```
+[api] listening on http://localhost:3001
+```
+ 
+## 5. Test
+ 
+```bash
+curl http://localhost:3001/health
+```
+ 
+---
