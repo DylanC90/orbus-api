@@ -48,8 +48,8 @@ Full stats and equipped gear for one character. **Case-sensitive.** Returns **40
   }
 }
 ```
--Ring Data wont be null once i see proper formatting, but it should work regardless as I'm just grabbing properties from the items
 ---
+Ring Data wont be null once i see proper formatting, but it should work regardless as I'm just grabbing properties from the items
 
 ### `GET /topkills?limit=N`
 
