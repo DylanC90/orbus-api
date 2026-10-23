@@ -30,6 +30,7 @@ const EQUIP_SLOTS = {
   5: { slot: "armor",  name: "Chestplate" },
   6: { slot: "armor",  name: "Gloves" },
   8: { slot: "ring",   name: "Ring 2" },
+  9: { slot: "weapon",  name: "Weapon 2" },
 };
 
 function parseEquipped(inv) {
@@ -42,7 +43,9 @@ function parseEquipped(inv) {
     const p = parseItem(raw, i);
     if (!p) continue;
     p.slot = def.name;
-    if (def.slot === "weapon") equipped.weapon = p;
+    if (def.slot === "weapon") {
+      if (equipped.weapon === null) equipped.weapon = p;
+    }
     else if (def.slot === "ring") equipped.rings.push(p);
     else equipped.armor.push(p);
   }
