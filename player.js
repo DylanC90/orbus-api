@@ -4,7 +4,7 @@ const { parseEquipped, classLevelsFiltered, unixSecondsToISO } = require("./pars
 async function getStats(name) {
   const doc = await run(
     r.db(RETHINK.db).table("Player")
-      .filter({ name })
+      .filter(p => p("name").eq(name).and(p("deleted").default(false).not()))
       .nth(0)
       .do(p => ({
         name: p("name"),

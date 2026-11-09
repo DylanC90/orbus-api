@@ -1,10 +1,11 @@
 const { r, RETHINK, run, collect } = require("./db");
 const { classLevelsFiltered } = require("./parse");
+const notDeleted = p => p("deleted").default(false).not();
 
 async function getTopKills(limit = 10) {
   const cursor = await run(
     r.db(RETHINK.db).table("Player")
-      .filter(p => p("records")("monsters_killed").default(0).gt(0))
+      .filter(p => notDeleted(p).and(p("records")("monsters_killed").default(0).gt(0)))
       .map(p => ({
         name: p("name"),
         mobKills: p("records")("monsters_killed").default(0),
