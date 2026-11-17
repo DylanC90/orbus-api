@@ -48,8 +48,59 @@ Full stats and equipped gear for one character. **Case-sensitive.** Returns **40
   }
 }
 ```
----
 Ring Data wont be null once i see proper formatting, but it should work regardless as I'm just grabbing properties from the items
+
+---
+
+### `GET /quests/:name`
+
+Quest progress for one character, based on `qf_<id>_cp` completion flags. **Case-sensitive.** Returns **404** if not found.
+
+Quests with multiple variants (e.g. `highsteppe-guardians` / `highsteppe-guardiansnice`) count as a single quest. A group counts as complete if any variant's flag is set. For remaining XP, a group uses the highest XP value among its variants.
+
+```
+/quests/test
+```
+
+```json
+{
+  "name": "test",
+  "totalPossible": 152,
+  "completedCount": 148,
+  "totalQuestXP": 1310305,
+  "remainingQuestXP": 80000,
+  "remainingQuestNames": [
+    "Elspeth's Madness",
+    "Sicilus Beastiary VI",
+    "Lucian's Manor",
+    "Minor Errands"
+  ]
+}
+```
+
+| Field | Description |
+|---|---|
+| `totalPossible` | Total number of quests (variant groups count once) |
+| `completedCount` | Quests the player has completed |
+| `totalQuestXP` | XP earned from completed quests |
+| `remainingQuestXP` | XP still available from incomplete quests |
+| `remainingQuestNames` | Names of incomplete quests. Empty array if all are done |
+
+---
+
+### `GET /topgathers?limit=N`
+
+Top players by number of gathers. Default **10**, max **100**. Zero-gather players are excluded.
+
+```
+/topgathers?limit=10
+```
+
+```json
+[{ "name": "test", "gathers": 120 }]
+```
+
+---
 
 ### `GET /topkills?limit=N`
 
