@@ -2,7 +2,8 @@ const express = require("express");
 const rateLimit = require("express-rate-limit");
 const { getConn } = require("./db");
 const { getStats } = require("./player");
-const { getTopKills, getTopPlaytime, getTopClass } = require("./leaderboard");
+const { getTopKills, getTopGathers, getTopPlaytime, getTopClass } = require("./leaderboard");
+const { getPlayerQuestStats } = require("./quests");
 
 const app = express();
 app.use(express.json());
@@ -61,6 +62,17 @@ app.get("/topplaytime", handle(async (req, res) => {
 app.get("/topclass", handle(async (req, res) => {
   const limit = parseLimit(req.query.limit);
   const data = await getTopClass(limit);
+  res.json(data);
+}));
+
+app.get("/player/:name/quests", handle(async (req, res) => {
+  const data = await getPlayerQuestStats(req.params.name);
+  res.json(data);
+}));
+
+app.get("/topgathers", handle(async (req, res) => {
+  const limit = parseLimit(req.query.limit);
+  const data = await getTopGathers(limit);
   res.json(data);
 }));
 

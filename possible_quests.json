@@ -1,0 +1,460 @@
+[
+  [
+    { "id": "airship", "name": "Airship to University Isle (MSQ)", "xp": 1000 }
+  ],
+  [
+    { "id": "ambitious-general", "name": "The Ambitious General (MSQ)", "xp": 1000 }
+  ],
+  [
+    { "id": "anthropologist", "name": "The Anthropologist", "xp": 0 }
+  ],
+  [
+    { "id": "associates", "name": "Associates", "xp": 0 }
+  ],
+  [
+    { "id": "attack-wolf", "name": "Attack of the Wolf (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "bandit", "name": "To Be A Bandit! (MSQ)", "xp": 5000 }
+  ],
+  [
+    { "id": "beginner-use-caution", "name": "Ghost Buster", "xp": 480 }
+  ],
+  [
+    { "id": "belle", "name": "Belle", "xp": 1000 }
+  ],
+  [
+    { "id": "bezoula", "name": "Loyalty Of The Warg (MSQ)", "xp": 18800 }
+  ],
+  [
+    { "id": "bishop-roma-plot", "name": "Festival Celebration (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "black-guide", "name": "Chudkatet (MSQ)", "xp": 25000 }
+  ],
+  [
+    { "id": "blood-debt", "name": "Blood Debt", "xp": 6000 }
+  ],
+  [
+    { "id": "break-barrier", "name": "Breaking the Barrier", "xp": 90000 }
+  ],
+  [
+    { "id": "bribe-guard-jail", "name": "New Dress (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "brother-pavara", "name": "Loyalty Of The Shadows (MSQ)", "xp": 7000 }
+  ],
+  [
+    { "id": "catch-day", "name": "Catch of the Day", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-2", "name": "Catch of the Day II", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-3", "name": "Catch of the Day III", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-4", "name": "Catch of the Day IV", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-5", "name": "Catch of the Day V", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-6", "name": "Catch of the Day VI", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-7", "name": "Catch of the Day VII", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-8", "name": "Catch of the Day VIII", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-9", "name": "Catch of the Day IX", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-10", "name": "Catch of the Day X", "xp": 0 }
+  ],
+  [
+    { "id": "catch-day-11", "name": "Catch of the Day XI", "xp": 0 }
+  ],
+  [
+    { "id": "celebration", "name": "Prepare for the Festival (MSQ)", "xp": 600 }
+  ],
+  [
+    { "id": "cenns-poetry", "name": "Marcell's Poetry (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "chefs-order", "name": "A Demanding Chef (MSQ)", "xp": 900 }
+  ],
+  [
+    { "id": "chefs-order-2", "name": "A Demanding Chef II (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "contractkill-2", "name": "The Grimm Reaper I", "xp": 10000 }
+  ],
+  [
+    { "id": "contractkill-3", "name": "The Grimm Reaper II", "xp": 14000 }
+  ],
+  [
+    { "id": "contractkill-4", "name": "The Grimm Reaper III", "xp": 15500 }
+  ],
+  [
+    { "id": "contractkill-5", "name": "The Grimm Reaper IV", "xp": 40000 }
+  ],
+  [
+    { "id": "contractkill-6", "name": "The Grimm Reaper V", "xp": 40000 }
+  ],
+  [
+    { "id": "contractkill-7", "name": "The Grimm Reaper VI", "xp": 60000 }
+  ],
+  [
+    { "id": "cradle-coffin", "name": "Cradle and Coffin", "xp": 80000 }
+  ],
+  [
+    { "id": "defeat-mushroom", "name": "Follow the Trail", "xp": 0 }
+  ],
+  [
+    { "id": "defeat-roma", "name": "Defeat Roma (MSQ)", "xp": 11708 }
+  ],
+  [
+    { "id": "defeat-stickquest", "name": "Lumber Jack", "xp": 10000 }
+  ],
+  [
+    { "id": "delivery-boy", "name": "The Deliveries", "xp": 18000 }
+  ],
+  [
+    { "id": "desert", "name": "Journey to Obnobi Desert (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "digging-deeper", "name": "Digging Deeper", "xp": 0 }
+  ],
+  [
+    { "id": "diluvian-puzzle", "name": "A Diluvian Puzzle (MSQ)", "xp": 15000 }
+  ],
+  [
+    { "id": "dragon-pet", "name": "Little Buddy", "xp": 0 }
+  ],
+  [
+    { "id": "dragon-treats", "name": "Treats", "xp": 0 }
+  ],
+  [
+    { "id": "dragon-treats2", "name": "More Treats", "xp": 0 }
+  ],
+  [
+    { "id": "elspeth-madness", "name": "Elspeth's Madness", "xp": 50000 }
+  ],
+  [
+    { "id": "explorers-league", "name": "The Explorer's League (MSQ)", "xp": 12500 }
+  ],
+  [
+    { "id": "faction-hero", "name": "Faction Hero (MSQ)", "xp": 10000 }
+  ],
+  [
+    { "id": "fassith-execution", "name": "Grand Affair (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "figure-moor", "name": "Little Helper", "xp": 0 }
+  ],
+  [
+    { "id": "first-trials", "name": "The First Trial (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "follow-the-signs", "name": "Follow the Signs (MSQ)", "xp": 1500 }
+  ],
+  [
+    { "id": "foraging-training", "name": "Gathering Training", "xp": 0 }
+  ],
+  [
+    { "id": "forbidden-temple", "name": "The Forbidden Temple (MSQ)", "xp": 18500 }
+  ],
+  [
+    { "id": "forest-secrets", "name": "Forest Secrets (MSQ)", "xp": 800 }
+  ],
+  [
+    { "id": "frozen-river", "name": "The Frozen River", "xp": 40000 }
+  ],
+  [
+    { "id": "kill-order", "name": "Returning Home", "xp": 30000 }
+  ],
+  [
+    { "id": "ghouls", "name": "Ghouls (MSQ)", "xp": 12000 }
+  ],
+  [
+    { "id": "ghouls-reflection", "name": "A Ghoul's Riddle  (MSQ)", "xp": 15000 }
+  ],
+  [
+    { "id": "green-mile", "name": "The Green Mile (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "guard-bribe", "name": "Secret Tithing (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "highsteppe-guardians", "name": "Highsteppe Under Siege (MSQ)", "xp": 13277 },
+    { "id": "highsteppe-guardiansnice", "name": "Highsteppe Under Siege (MSQ)", "xp": 13277 }
+  ],
+  [
+    { "id": "hot-springs", "name": "Hot Springs", "xp": 10000 }
+  ],
+  [
+    { "id": "house-highsteppe", "name": "Highsteppe Home", "xp": 0 }
+  ],
+  [
+    { "id": "huntinglog-1", "name": "Sicilus Beastiary", "xp": 3700 }
+  ],
+  [
+    { "id": "huntinglog-2", "name": "Sicilus Beastiary II", "xp": 2900 }
+  ],
+  [
+    { "id": "huntinglog-3", "name": "Sicilus Beastiary III", "xp": 12000 }
+  ],
+  [
+    { "id": "huntinglog-4", "name": "Sicilus Beastiary IV", "xp": 18000 }
+  ],
+  [
+    { "id": "huntinglog-5", "name": "Sicilus Beastiary V", "xp": 18000 }
+  ],
+  [
+    { "id": "huntinglog-6", "name": "Sicilus Beastiary VI", "xp": 0 }
+  ],
+  [
+    { "id": "into-depths", "name": "Into the Depths", "xp": 130000 }
+  ],
+  [
+    { "id": "into-the-wilds", "name": "Into The Wilds (MSQ)", "xp": 5000 }
+  ],
+  [
+    { "id": "invisible-ink", "name": "Invisible Ink (MSQ)", "xp": 5000 }
+  ],
+  [
+    { "id": "ithecac", "name": "Riding the Wave", "xp": 0 }
+  ],
+  [
+    { "id": "jethin-box", "name": "Jethin's Key", "xp": 0 }
+  ],
+  [
+    { "id": "job-seeker", "name": "Job Seeker (MSQ)", "xp": 2000 }
+  ],
+  [
+    { "id": "khabors-pass", "name": "Khabor's Pass", "xp": 40000 }
+  ],
+  [
+    { "id": "kid-brother", "name": "The Kid Brother (MSQ)", "xp": 7000 }
+  ],
+  [
+    { "id": "kill-monster", "name": "Final Challenge", "xp": 540 }
+  ],
+  [
+    { "id": "king-sweetie", "name": "King Sweeties (MSQ)", "xp": 1000 }
+  ],
+  [
+    { "id": "kings-bones", "name": "Old Kings Bones (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "knight-ceremony", "name": "Knighting Ceremony (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "kreyen", "name": "Loyalty Of The Tribe (MSQ)", "xp": 15000 }
+  ],
+  [
+    { "id": "lamavora-frontier", "name": "The Lamavora Frontier (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "last-meal", "name": "The Last Meal (MSQ)", "xp": 3500 }
+  ],
+  [
+    { "id": "letharow-meal", "name": "The Other White Meat (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "lizard-codex", "name": "The Lizards Codex", "xp": 18000 }
+  ],
+  [
+    { "id": "long-ear", "name": "Long Ear Freaks", "xp": 300 }
+  ],
+  [
+    { "id": "long-ear2", "name": "Ravenous Redtails", "xp": 600 }
+  ],
+  [
+    { "id": "loyalty-guardian", "name": "Sword of Ma'at (MSQ)", "xp": 18000 },
+    { "id": "loyalty-guardiannice", "name": "Loyalty of the Guardians (MSQ)", "xp": 18000 }
+  ],
+  [
+    { "id": "lucian-manor", "name": "Lucian's Manor", "xp": 0 }
+  ],
+  [
+    { "id": "lucianwilds", "name": "The Lucian Plateau (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "ludwig-sarrow", "name": "Iron Forged", "xp": 60000 }
+  ],
+  [
+    { "id": "lure-crafting", "name": "Lure Crafting", "xp": 0 }
+  ],
+  [
+    { "id": "meet-up", "name": "The Meetup (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "missing-children", "name": "From Their Beds", "xp": 10000 }
+  ],
+  [
+    { "id": "narwhal-bay", "name": "Narwhal Bay", "xp": 50000 }
+  ],
+  [
+    { "id": "narwhal-wizard", "name": "The Narwhal Wizard", "xp": 70000 }
+  ],
+  [
+    { "id": "new-recruit", "name": "New Recruit (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "noahs-ark-desert", "name": "Noah's Ark Desert", "xp": 16000 }
+  ],
+  [
+    { "id": "noahs-ark-frosted-sprit", "name": "Noah's Ark Frosted Spit", "xp": 31000 }
+  ],
+  [
+    { "id": "noahs-ark-greaters", "name": "Noah's Ark Wilds", "xp": 0 }
+  ],
+  [
+    { "id": "noahs-ark-highsteppe", "name": "Noah's Ark Kingsport Lake", "xp": 2800 }
+  ],
+  [
+    { "id": "noahs-ark-lamavoria-frontier", "name": "Noah's Ark Lamavora Frontier", "xp": 40000 }
+  ],
+  [
+    { "id": "noahs-ark-lucian-wilds", "name": "Noah's Ark Lucian Plateau", "xp": 15000 }
+  ],
+  [
+    { "id": "noahs-ark-rainforest", "name": "Noah's Ark Rainforest", "xp": 8500 }
+  ],
+  [
+    { "id": "noahs-ark-wenderwood", "name": "Noah's Ark Wenderwood", "xp": 2500 }
+  ],
+  [
+    { "id": "npc-green-lady", "name": "Spore Hog", "xp": 0 }
+  ],
+  [
+    { "id": "pagan-magicks", "name": "Pagan Magicks (MSQ)", "xp": 3000 }
+  ],
+  [
+    { "id": "patreayl-rainforest", "name": "The Patreayl Rainforest (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "pilgrim-journey", "name": "A Pilgrim's Journey (MSQ)", "xp": 2000 }
+  ],
+  [
+    { "id": "prisoners", "name": "The Prisoners (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "promotion", "name": "A Promotion (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "queens-treachery", "name": "The Queens Treachery (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "report-duty", "name": "Report for Duty (MSQ)", "xp": 1000 }
+  ],
+  [
+    { "id": "resort-owner-errand", "name": "Minor Errands", "xp": 30000 }
+  ],
+  [
+    { "id": "return-boss", "name": "Little Helper", "xp": 6000 }
+  ],
+  [
+    { "id": "sarrow", "name": "Loyalty Of The League (MSQ)", "xp": 18800 }
+  ],
+  [
+    { "id": "search-room", "name": "Missing Person", "xp": 0 }
+  ],
+  [
+    { "id": "second-trials", "name": "Second Trial (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "secret-commander", "name": "A Secretive Commander (MSQ)", "xp": 3000 }
+  ],
+  [
+    { "id": "see-fassifth", "name": "The Night Before (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "seek-petyr", "name": "Seeking Petyr (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "sicilus-riddle", "name": "Sicilus Riddle (MSQ)", "xp": 0 },
+    { "id": "sicilus-riddle-1", "name": "Sicilus Punishments (MSQ)", "xp": 0 },
+    { "id": "sicilus-riddle-2", "name": "Sicilus Punishments (MSQ)", "xp": 0 },
+    { "id": "sicilus-riddle-3", "name": "Sicilus Punishments (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "something-fishy", "name": "Something Fishy", "xp": 0 }
+  ],
+  [
+    { "id": "summoning-potion", "name": "Summoning Potion (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "sushi", "name": "Sushi", "xp": 18000 }
+  ],
+  [
+    { "id": "the-archives", "name": "The Archives (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "the-shakeup", "name": "Time off (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "the-trials", "name": "The Trials (MSQ)", "xp": 8500 }
+  ],
+  [
+    { "id": "third-trails", "name": "Third Trial (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "time-off", "name": "Time off (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "time-to-eat", "name": "Time to Eat (MSQ)", "xp": 600 }
+  ],
+  [
+    { "id": "time-to-eat2", "name": "Time to Eat II (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "tinny-prediction", "name": "An Accidental Prophecy (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "tradua-mines", "name": "Trail of the Ancients", "xp": 0 }
+  ],
+  [
+    { "id": "tradua-mines-2", "name": "Return of the Ancients", "xp": 0 }
+  ],
+  [
+    { "id": "two-lives", "name": "A Double Life (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "uncovered-truth", "name": "Uncovered Truth", "xp": 0 }
+  ],
+  [
+    { "id": "unruly-outlier", "name": "An Unruly Outlier (MSQ)", "xp": 1000 }
+  ],
+  [
+    { "id": "vibira", "name": "Mother Völuspá (MSQ)", "xp": 0 }
+  ],
+  [
+    { "id": "warrior-training-monster", "name": "Monster Slayer", "xp": 0 }
+  ],
+  [
+    { "id": "wenderwood", "name": "Wenderwood Woes", "xp": 1500 }
+  ],
+  [
+    { "id": "whiskey-trader", "name": "Whiskey Trader", "xp": 2000 }
+  ],
+  [
+    { "id": "witch-apprentice", "name": "Witch's Apprentice", "xp": 1000 }
+  ],
+  [
+    { "id": "witch-brew", "name": "An Intoxicating Brew", "xp": 0 }
+  ],
+  [
+    { "id": "witch-brew-2", "name": "An Intoxicating Brew Part 2", "xp": 0 }
+  ],
+  [
+    { "id": "woodland-rebels", "name": "Woodland Rebels (MSQ)", "xp": 3000 }
+  ],
+  [
+    { "id": "writers-block", "name": "Writers Block (MSQ)", "xp": 0 }
+  ]
+]

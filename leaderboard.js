@@ -16,6 +16,20 @@ async function getTopKills(limit = 10) {
   return await collect(cursor);
 }
 
+async function getTopGathers(limit = 10) {
+  const cursor = await run(
+    r.db(RETHINK.db).table("Player")
+      .filter(p => notDeleted(p).and(p("records")("gathers").default(0).gt(0)))
+      .map(p => ({
+        name: p("name"),
+        gathers: p("records")("gathers").default(0),
+      }))
+      .orderBy(r.desc("gathers"))
+      .limit(limit)
+  );
+  return await collect(cursor);
+}
+
 async function getTopPlaytime(limit = 10) {
   const cursor = await run(
     r.db(RETHINK.db).table("Player")
@@ -58,4 +72,4 @@ async function getTopClass(limit = 10) {
   return scored.slice(0, limit);
 }
 
-module.exports = { getTopKills, getTopPlaytime, getTopClass };
+module.exports = { getTopKills, getTopGathers, getTopPlaytime, getTopClass };
