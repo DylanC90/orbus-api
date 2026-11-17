@@ -52,7 +52,7 @@ Ring Data wont be null once i see proper formatting, but it should work regardle
 
 ---
 
-### `GET /quests/:name`
+### `GET /player/:name/quests`
 
 Quest progress for one character, based on `qf_<id>_cp` completion flags. **Case-sensitive.** Returns **404** if not found.
 
