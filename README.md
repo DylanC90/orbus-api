@@ -68,11 +68,7 @@ OR Remove it from the possible-quests.json (so sorry for any issues this causes 
 ```json
 {
   "name": "test",
-  "totalPossible": 152,
-  "completedCount": 148,
-  "totalQuestXP": 1310305,
-  "remainingQuestXP": 80000,
-  "remainingQuestNames": [
+  "completedFlags": [
     "Elspeth's Madness",
     "Sicilus Beastiary VI",
     "Lucian's Manor",
@@ -80,14 +76,7 @@ OR Remove it from the possible-quests.json (so sorry for any issues this causes 
   ]
 }
 ```
-
-| Field | Description |
-|---|---|
-| `totalPossible` | Total number of quests (variant groups count once) |
-| `completedCount` | Quests the player has completed |
-| `totalQuestXP` | XP earned from completed quests |
-| `remainingQuestXP` | XP still available from incomplete quests |
-| `remainingQuestNames` | Names of incomplete quests. Empty array if all are done |
+returns a list of all completed quests
 
 ---
 
