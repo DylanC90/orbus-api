@@ -58,6 +58,9 @@ Quest progress for one character, based on `qf_<id>_cp` completion flags. **Case
 
 Quests with multiple variants (e.g. `highsteppe-guardians` / `highsteppe-guardiansnice`) count as a single quest. A group counts as complete if any variant's flag is set. For remaining XP, a group uses the highest XP value among its variants.
 
+(includes one by default bugged quest -- `lucian-manor`)
+To fix: Go to `content\dialog\5-Missing-Mom1.json` on Line 31, add a `qf_` to the start of the reqFlags field.
+OR Remove it from the possible-quests.json (so sorry for any issues this causes for people scratching their head "where is that last quest!?" xd)
 ```
 /quests/test
 ```
